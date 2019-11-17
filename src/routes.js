@@ -5,9 +5,14 @@ export default createStackNavigator({
   Main
 }, {
   navigationOptions: {
+    title: 'JShunt',
     headerStyle: {
       backgroundColor: "#DA552F"
     },
-    headerTintColor: "#FFF"
+    headerTintColor: "#FFF",
+    headerTitleStyle: {     
+      flex: 1,
+      textAlign: 'center',
+    },
   },
 });
