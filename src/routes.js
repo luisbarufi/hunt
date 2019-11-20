@@ -1,12 +1,14 @@
-import { createStackNavigator } from 'react-navigation';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+
 import Main from './pages/main';
 import Product from './pages/product';
 
-export default createStackNavigator({
+const AppNavigator = createStackNavigator({
   Main,
   Product
-}, {
-  navigationOptions: {
+},{
+  navigationOptions:{
     title: 'JShunt',
     headerStyle: {
       backgroundColor: "#DA552F"
@@ -18,3 +20,5 @@ export default createStackNavigator({
     },
   },
 });
+
+export default createAppContainer(AppNavigator);
