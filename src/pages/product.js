@@ -1,11 +1,12 @@
 import React from 'react';
-import { WebView } from 'react-native-webview';
+import { View } from 'react-native';
+//import { WebView } from 'react-native-webview';
 
-const Product = ({ navigation }) => {
-  console.log(navigation);
+const Product = () => {
+  
   return(
-    <WebView 
-      source = {{ uri: navigation.state.params.product.url}}
+    <View 
+      source = {{ uri: 'https://github.com/facebook/react-native'}}
     />
   );  
 };
